@@ -2,6 +2,7 @@
 import { ILatLong } from './ilatlong';
 import { IPoint } from './ipoint';
 import { IBox } from './ibox';
+import {IStyle} from './istyle';
 
 export interface IMapOptions {
     credentials?: string;
@@ -35,4 +36,5 @@ export interface IMapOptions {
     zoom?: number;
     mapTypeId?: MapTypeId;
     centerOffset?: IPoint;
+    styles: IStyle[];
 }
